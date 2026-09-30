@@ -5,6 +5,8 @@ Curso Inicial de Desarrollo Front-End — UTN BA
 
 Migración del sitio Maison Lorne (HTML/CSS) a una aplicación React con componentes.
 
+Sitio publicado: [maison-lorne-react.vercel.app](https://maison-lorne-react.vercel.app)
+
 ## Tecnologías
 
 - React 19 + Vite
