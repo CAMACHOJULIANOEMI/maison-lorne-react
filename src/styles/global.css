@@ -1,0 +1,66 @@
+/* =========================================================
+   MAISON LORNE — Estilos globales
+   Reset, variables, tipografía y elementos compartidos
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --black:   #0A0A0A;
+  --cream:   #F5F0E8;
+  --white:   #FFFFFF;
+  --sand:    #C9B99A;
+  --carbon:  #2C2C2C;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Jost', system-ui, sans-serif;
+}
+
+body {
+  background: var(--cream);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+
+section { position: relative; }
+
+/* Títulos de sección compartidos */
+.section-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin-bottom: 1.2rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--black);
+}
+.section-title em { font-style: italic; font-weight: 400; }
+
+/* Botones */
+.btn {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2.4rem;
+  border: 1px solid var(--sand);
+  color: var(--sand);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s;
+  font-family: var(--font-body);
+}
+.btn:hover { background: var(--sand); color: var(--black); }
+.btn.filled { background: var(--sand); color: var(--black); border-color: var(--sand); }
+.btn.filled:hover { background: transparent; color: var(--sand); }
+.btn.ghost { border-color: rgba(201,185,154,0.4); color: var(--carbon); }

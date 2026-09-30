@@ -1,0 +1,51 @@
+/* Estilos del componente Contact (formulario) */
+
+.contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+
+/* Mensaje de confirmación que se muestra después de enviar */
+.form-success {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+.form-success i { font-size: 2.5rem; color: var(--sand); }
+.form-success h3 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; color: var(--black); }
+.form-success p { font-size: 0.9rem; line-height: 1.8; color: var(--carbon); max-width: 380px; }
+
+.form-row { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+.field { flex: 1 1 220px; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.field label { font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sand); font-weight: 400; }
+
+.field input, .field select, .field textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--sand);
+  padding: 0.6rem 0;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--black);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--black); }
+.field textarea { resize: vertical; min-height: 80px; }
+.field select { appearance: none; cursor: pointer; }
+
+/* Grupos de radio / checkbox */
+.choice-group { display: flex; flex-direction: column; gap: 0.6rem; }
+.choice-group span.group-label { font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sand); }
+.choice-options { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+.choice-options label {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.8rem; color: var(--carbon); text-transform: none; letter-spacing: normal;
+  cursor: pointer;
+}
+.choice-options input[type="radio"],
+.choice-options input[type="checkbox"] { accent-color: var(--sand); width: 15px; height: 15px; }
+
+.form-actions { display: flex; flex-wrap: wrap; gap: 1rem; }

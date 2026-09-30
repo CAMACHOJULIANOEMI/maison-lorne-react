@@ -1,0 +1,30 @@
+/* Estilos de la página Dining */
+
+#restaurant {
+  background: var(--white);
+  padding: 9rem 3.5rem 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+.restaurant-text, .restaurant-visual { flex: 1 1 380px; }
+
+.restaurant-text p {
+  font-size: 0.9rem; line-height: 1.9; color: var(--carbon);
+  margin: 1.5rem 0 2.5rem; max-width: 440px;
+}
+
+.amenity-list { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2.5rem; }
+.amenity-list li {
+  display: flex; align-items: center; gap: 0.6rem;
+  font-size: 0.8rem; letter-spacing: 0.05em; color: var(--carbon);
+}
+.amenity-list i { color: var(--sand); font-size: 0.9rem; }
+
+.restaurant-visual { overflow: hidden; aspect-ratio: 4 / 3; }
+.restaurant-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+@media (max-width: 700px) {
+  #restaurant { padding: 6.5rem 1.5rem 4rem; }
+}

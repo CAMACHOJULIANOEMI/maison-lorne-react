@@ -1,0 +1,52 @@
+/* Estilos del componente Navbar */
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3.5rem;
+}
+nav.light { color: var(--cream); }
+nav.dark  { color: var(--black); background: var(--cream); border-bottom: 1px solid var(--sand); }
+nav.solid { color: var(--cream); background: var(--black); border-bottom: 1px solid rgba(201,185,154,0.15); }
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  list-style: none;
+}
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.nav-links a:hover { opacity: 1; }
+.nav-links i { font-size: 0.85rem; }
+
+@media (max-width: 700px) {
+  nav { padding: 1.2rem 1.5rem; }
+  .nav-links { gap: 1rem; }
+  .nav-links span { display: none; }
+}

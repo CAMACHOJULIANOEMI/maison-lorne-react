@@ -1,0 +1,24 @@
+/* Estilos del componente Gallery */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border: 1px solid rgba(201,185,154,0.2);
+  aspect-ratio: 1 / 1;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.gallery-item:hover img { transform: scale(1.06); }
+
+@media (max-width: 700px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+}
